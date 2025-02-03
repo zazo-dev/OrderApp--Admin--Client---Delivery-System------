@@ -1,0 +1,32 @@
+nvm use 22
+npm install -g @ionic/cli
+ionic start nombre-app
+cd nombre-app
+ionic serve
+
+-- crear proyecto en github
+
+npm install @capacitor/android
+npm install @capacitor/ios
+
+npm cap add android
+npm cap add ios
+
+ionic build --prod
+npx cap sync 
+
+npm i @angular/fire
+
+// cors storage
+
+https://cloud.google.com/storage/docs/gsutil_install
+gcloud auth login
+gsutil cors set cors.json gs://pideenremis.appspot.com
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+ionic g c shared/components/sidemenu --spec=false
+
+ionic g m backoffice --routing 
+ionic g c backoffice/pages/ajustes --spec=false
+ionic g c backoffice/pages/categorias --spec=false
+ionic g c backoffice/pages/productos --spec=false
+
+
+ionic g c backoffice/pages/categoria-detail --spec=false
+ionic g c backoffice/pages/producto-detail --spec=false
+
+ionic g m store --routing 
+ionic g c store/pages/home-store --spec=false
+ionic g c store/pages/producto --spec=false
+ionic g c store/pages/carrito-page --spec=false
+
+ionic g c store/components/item-product --spec=false
+
+ionic g s store/services/carrito
+
+npm install @ionic/storage-angular
+ionic g s services/local-storage
+
+ionic g c store/components/button-carrito --spec=false
+
+ionic g c store/components/item-carrito --spec=false
+
+ionic g c store/components/datos-pedido --spec=false
+ionic g c store/components/fecha-pedido --spec=false
+
+ionic g c /store/components/direccion-pedido --spec=false
+ionic g c /store/components/map-direccion-pedido --spec=false
+ionic g c /store/components/place-detail --spec=false
+
+npm install @capacitor/google-maps@6.0.0-rc.0
+npm install @capacitor/geolocation@6.0.0
+
+ionic g c store/pages/mis-pedidos --spec=false
+
+ionic g c /store/components/pedido-detail --spec=false
+ionic g p /shared/pipes/datefire
+
+ionic g c /store/pages/pedido-page --spec=false
+
+ionic g c backoffice/pages/pedidos --spec=false
+ionic g c /backoffice/components/pedido-detail --spec=false
+
+
+ionic g m motorizado --routing 
+ionic g c /motorizado/page/pedidos --spec=false
+ionic g c /motorizado/components/pedido-detail --spec=false
+
+ionic g c /motorizado/pages/map-recorrido --spec=false
+ionic g c /motorizado/pages/mis-pedidos --spec=false
+
+ionic g c /store/pages/map-recorrido-pedido --spec=false
+
+
+npm install @capacitor/push-notifications@6
+ionic g s services/notifications-push
+
+ionic g m notifications
+ionic g c notifications/components/all-notifications --spec=false
+ionic g c notifications/components/detail-notification --spec=false
+ionic g c notifications/components/button-notifications --spec=false
+ionic g s notifications/notifications
+
+npm install @capacitor/assets --save-dev
+npm install @capacitor/splash-screen@6
+
+npm install @capacitor/status-bar@6
